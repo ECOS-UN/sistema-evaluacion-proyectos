@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="login-box">
+
+            <img src="imagenes/logoUN.png" alt="Logo Universidad" class="logoUN">
+
+            <h1>Sistema Académico</h1>
+
+            <form>
+
+                <label for="tipoUsuario">Tipo de Usuario</label>
+                <select id="tipoUsuario" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="alumno">Alumno</option>
+                    <option value="maestro">Maestro</option>
+                    <option value="juez">Juez</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+
+                <label for="usuario">Usuario</label>
+                <input
+                    type="text"
+                    id="usuario"
+                    placeholder="Ingrese su usuario"
+                    required>
+
+                <label for="password">Contraseña</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Ingrese su contraseña"
+                    required>
+
+                <button type="submit">
+                    Iniciar Sesión
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
